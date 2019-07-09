@@ -4,8 +4,8 @@ LABEL maintainer="Ryan Mitchell <mitch@ryansmitchell.com>"
 
 RUN apk add --no-cache curl grep sed unzip bash nodejs nodejs-npm
 
-# Set timezone to CST
-ENV TZ=America/Chicago
+# Set timezone to PHT
+ENV TZ=Asia/Manila
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 WORKDIR /usr/src
